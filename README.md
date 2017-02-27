@@ -1,2 +1,5 @@
-# HTML5-Music-Player
-一款优雅的Web音乐播放器
+# HTML5音乐播放器
+---
+效果展示
+
+![img](images/8.gif)
