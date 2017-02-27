@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>BB Player</title>
+        <script src="工具箱.js"></script>
+        <script src='./jquery.js'></script>
+        <link rel="stylesheet" href="appCss.css">
+
+    </head>
+    <body>
+        <!-- <h1>BB Player</h1> -->
+        <!-- <h2>Playing</h2> -->
+
+        <!-- background div ,为了模糊背景 -->
+        <div class="BB-backgroud">
+            <!-- 外面的俩按钮 -->
+            <div class="BB-outside">
+                <!-- <a id="id-button-last" href="javascript:" class="BB-audio-control" data-offset="-1"></a>
+                <a id="id-button-next" href="javascript:" class="BB-audio-control" data-offset="1"></a> -->
+            </div>
+
+            <div class="BB-player">
+              <audio id="id-audio-player" src="audios/Photograph - Ed Sheeran.mp3" data-index="0" data-sum=3>
+              </audio>
+
+              <!-- 中间背景大图 -->
+              <!-- <a class="BB-backgroud-img" href="javascript:"></a> -->
+
+              <!-- 各种按钮 -->
+              <div class="BB-player-control">
+                  <a id="id-a-pause" class="BB-hide" href="javascript:"></a>
+                  <a id="id-a-play" href="javascript:"></a>
+                  <a id="id-button-last" href="javascript:" class="BB-audio-control" data-offset="-1"></a>
+                  <a id="id-button-next" href="javascript:" class="BB-audio-control" data-offset="1"></a>
+
+                  <!-- <button id="id-button-mode">播放模式</button> -->
+              </div>
+
+              <!-- 播放列表 -->
+              <div class="BB-player-list ">
+                  <a id="id-a-list-toggle" href="javascript:"></a>
+                  <a id="id-a-list-like" class="BB-hide" href="javascript:"></a>
+                  <a id="id-a-list-nolike" href="javascript:"></a>
+
+                  <ul id="id-ul-song-0" class="BB-hide">
+                      <li class='BB-song' data-index='0'>
+                      <a href="#">Photograph - Ed Sheeran</a>
+                      </li>
+                  </ul>
+                  <ul id="id-ul-song-1" class="BB-hide">
+                      <li class='BB-song' data-index='1'>
+                      <a href="#">至死不渝 - 林二汶</a>
+                      </li>
+                  </ul>
+                  <ul id="id-ul-song-2" class="BB-hide">
+                      <li class='BB-song' data-index='2'>
+                      <a href="#">いのちの名前 - 広橋真紀子</a>
+                      </li>
+                  </ul>
+
+              </div>
+
+              <!-- 歌曲标题作者 -->
+              <div class="BB-song-info">
+                  <span class="BB-song-name">Photograph</span>
+                  <br>
+                  <span class="BB-song-author">Ed Sheeran</span>
+              </div>
+
+              <!-- 自写滑动条 -->
+              <!-- 音量条 -->
+              <div class="BB-volume-slider">
+                  <div class="BB-volume-bar" style="">
+                      <span class="BB-volume-circle"></span>
+                  </div>
+              </div>
+              <!-- 静音键 -->
+              <a href="javascript:" class="BB-volume-min BB-hide"></a>
+              <a href="javascript:" class="BB-volume-max"></a>
+
+              <div class="BB-time-slider">
+                  <span id=id-span-duration></span>
+                  <span id=id-span-current></span>
+                  <div class="BB-time-bar" style="">
+                  </div>
+              </div>
+          </div>
+
+        </div>
+
+        <script src="slider.js"></script>
+        <script src='app.js'></script>
+    </body>
+</html>
